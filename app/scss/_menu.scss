@@ -1,0 +1,26 @@
+$green: rgba(50, 201, 70, 0.533);
+
+
+p{
+    color:$red;
+    }
+
+i{
+    color: #000;
+
+}
+
+i:hover{
+    color: $green;
+    
+}
+
+.main_information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.main_inf_flex{
+    display: flex;
+}
