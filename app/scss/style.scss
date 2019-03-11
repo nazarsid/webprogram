@@ -1,3 +1,32 @@
-@import "var";
-@import "menu";
-@import "slider";
+$color_light: rgb(0, 81, 255);
+$color_dark: rgb(2, 32, 85);
+
+* {
+    font-family: Arial, "Times New Roman", sans-serif;
+    /* font-size: 18px; */
+}
+
+/* Настраиваю сетку */
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 34px 170px 500px 40px 620px 40px 280px 300px 40px 500px 40px 400px 320px 35px; // 400
+    grid-template-areas: "info-panel info-panel info-panel"
+                        "main-menu main-menu main-menu"
+                        "main-info main-info main-info"
+                        "planes-header planes-header planes-header"
+                        "wrapper wrapper wrapper"
+                        "gallery-header gallery-header gallery-header"
+                        "slider slider slider"
+                        "subscribe subscribe subscribe"
+                        "feedback-header feedback-header feedback-header"
+                        "feedback feedback feedback"
+                        "contacts contacts contacts"
+                        "footer-1 footer-2 footer-3"
+                        "footer-4 footer-4 footer-4"
+                        "footer-5 footer-5 footer-5";
+}
+

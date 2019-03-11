@@ -1,19 +1,13 @@
+@charset "UTF-8";
+* {
+  font-family: Arial, "Times New Roman", sans-serif;
+  /* font-size: 18px; */ }
+
+/* Настраиваю сетку */
 body {
-  color: #f058; }
-
-p {
-  color: #f058; }
-
-i {
-  color: #000; }
-
-i:hover {
-  color: rgba(50, 201, 70, 0.533); }
-
-.main_information {
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px; }
-
-.main_inf_flex {
-  display: flex; }
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 34px 170px 500px 40px 620px 40px 280px 300px 40px 500px 40px 400px 320px 35px;
+  grid-template-areas: "info-panel info-panel info-panel" "main-menu main-menu main-menu" "main-info main-info main-info" "planes-header planes-header planes-header" "wrapper wrapper wrapper" "gallery-header gallery-header gallery-header" "slider slider slider" "subscribe subscribe subscribe" "feedback-header feedback-header feedback-header" "feedback feedback feedback" "contacts contacts contacts" "footer-1 footer-2 footer-3" "footer-4 footer-4 footer-4" "footer-5 footer-5 footer-5"; }
