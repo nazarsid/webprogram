@@ -27,6 +27,6 @@ gulp.task('default', function() {
 gulp.task("sass", function() { 
     return gulp.src("app/scss/*.sass") 
      .pipe(sass()) 
-     .pipe(gulp.dest('app/css')); 
+     .pipe(gulp.dest('dict/css')); 
 }); 
 
