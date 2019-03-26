@@ -5,7 +5,7 @@ a {
 .black {
   background-color: black; }
 
-.pading, .contact .adress, .contact .mobile-contact, .contact .clock, nav .nav-item a {
+.pading, .contact .adress, .contact .mobile-contact, .contact .clock, .nav-b .nav-item-b a, .toup {
   padding: 0 10px; }
 
 .contact {
@@ -39,7 +39,7 @@ i {
   i i:hover {
     color: #3498db; }
 
-nav {
+.nav-b {
   display: flex;
   max-width: 1000px;
   align-items: center;
@@ -48,14 +48,21 @@ nav {
   margin: 0 auto;
   padding: 10px;
   background-color: white; }
-  nav .logo a {
+  .nav-b .logo a {
     color: #3498db;
     font-size: 36px;
     font-weight: 600; }
-  nav .nav-item a {
+  .nav-b .nav-item-b a {
     color: black; }
-  nav .nav-item a:hover {
+  .nav-b .nav-item-b a:hover {
     color: #3498db; }
+
+.toup {
+  border-radius: 45px;
+  background-color: blue;
+  position: fixed;
+  top: 90%;
+  left: 5%; }
 
 .blue-back {
   background-color: #3498db; }
@@ -64,8 +71,22 @@ body {
   margin: 0 auto; }
 
 .btn {
-  padding: 10px;
-  background-color: gray; }
+  padding: 15px;
+  display: inline-block;
+  width: 15em;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: pre-line;
+  padding: .7em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce); }
 
 .contact-service {
   display: flex;
@@ -111,7 +132,8 @@ body {
     font-size: 36px; }
 
 .card-service img {
-  max-width: 100%; }
+  width: 100%;
+  height: 290px; }
 
 .card-service .card-text h4 {
   text-align: center; }
@@ -132,11 +154,10 @@ body {
   max-width: 1000px;
   align-items: center;
   justify-content: space-between;
-  height: 140px;
   margin: 0 auto;
   padding: 10px; }
 
-.box-icon {
+.box-icon i {
   font-size: 44px;
   line-height: 1;
   color: white; }
@@ -172,6 +193,12 @@ body {
     line-height: 38px;
     width: 400px; }
 
+.grid-change-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-change-2-area {
+  grid-column: 1/3; }
+
 footer {
   display: flex;
   padding: 100px 100px;
@@ -179,13 +206,13 @@ footer {
   height: 100%;
   justify-content: space-between; }
 
-.col {
+.col-f {
   display: flex;
   flex-direction: column;
   max-width: 300px; }
-  .col h3 {
+  .col-f h3 {
     color: white; }
-  .col p {
+  .col-f p {
     color: white; }
 
 body {
