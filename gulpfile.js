@@ -21,11 +21,11 @@ var gulp = require('gulp'),
     sass = require("gulp-sass");; 
 
 gulp.task('default', function() { 
-    gulp.watch("app/scss/*.scss",gulp.series("sass"));
+    gulp.watch("app/scss/*.sass",gulp.series("sass"));
 }); 
 
 gulp.task("sass", function() { 
-    return gulp.src("app/scss/*.scss") 
+    return gulp.src("app/scss/*.sass") 
      .pipe(sass()) 
      .pipe(gulp.dest('app/css')); 
 }); 

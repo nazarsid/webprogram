@@ -1,0 +1,63 @@
+a
+  text-decoration: none
+  color: $header-text-color
+.black
+  background-color: black
+
+.pading
+  padding: 0 10px
+.contact
+  background-color: black
+  display: flex
+  max-width: 1000px
+  align-items: center
+  justify-content: space-between
+  height: $height-contact-menu
+  margin: 0 auto
+  padding: 10px
+  .contact-item-left
+    display: flex
+
+  .adress
+    @extend .pading
+    border-right: 1px solid $header-text-color
+    align-self: center
+  .mobile-contact
+    @extend .pading
+    display: flex
+    flex-direction: row
+    .number
+      display: flex
+      flex-direction: column
+    border-right: 1px solid $header-text-color
+  .clock
+    @extend .pading
+    align-self: center
+i
+  align-self: center
+  color: deepskyblue
+  cursor: pointer
+  i:hover
+    color: $text-color-nav
+nav
+  display: flex
+  max-width: 1000px
+  align-items: center
+  justify-content: space-between
+  height: $height-contact-menu
+  margin: 0 auto
+  padding: 10px
+  background-color: white
+  .logo
+
+    a
+      color: $text-color-nav
+      font-size: 36px
+      font-weight: 600
+  .nav-item
+    a
+      @extend .pading
+      color: black
+    a:hover
+      color: $text-color-nav
+   
