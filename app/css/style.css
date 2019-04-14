@@ -5,7 +5,12 @@ a {
 .black {
   background-color: black; }
 
-.pading, .contact .adress, .contact .mobile-contact, .contact .clock, .nav-b .nav-item-b a, .toup {
+.contact {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold; }
+
+.pading, .contact .adress, .contact .mobile-contact, .contact .clock, .nav-item-b a, .toup {
   padding: 0 10px; }
 
 .contact {
@@ -48,14 +53,17 @@ i {
   margin: 0 auto;
   padding: 10px;
   background-color: white; }
-  .nav-b .logo a {
-    color: #3498db;
-    font-size: 36px;
-    font-weight: 600; }
-  .nav-b .nav-item-b a {
-    color: black; }
-  .nav-b .nav-item-b a:hover {
-    color: #3498db; }
+
+.logo a {
+  color: #3498db;
+  font-size: 36px;
+  font-weight: 600; }
+
+.nav-item-b a {
+  color: black; }
+
+.nav-item-b a:hover {
+  color: #3498db; }
 
 .toup {
   border-radius: 45px;
